@@ -1,0 +1,646 @@
+@import "media"
+@import "fonts"
+@import "burger"
+@import "vars"
+@import "popups"
+
+.section__games 
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 80px 
+    +_1400
+        justify-content: space-around
+        margin: 40px 20px  
+    +_600
+        margin: 40px 0px
+    .games-item 
+        text-decoration: none
+        border-radius: 20px
+        position: relative
+        margin: 10px 0px
+        width: 196px
+        +_1400
+            margin: 5px
+        +_600
+            max-width: 47%
+        &__image img 
+            display: block
+            border-radius: 10px 10px 0px 0px
+            transition: 0.5s all
+            width: 100%
+        &__tile 
+            background-color: $mainLight
+            text-align: center
+            border-radius: 0px 0px 10px 10px
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 46px
+            p
+                font-family: $theSecondFontd
+                
+                font-size: 16px
+                line-height: 19px
+                letter-spacing: 0.02em
+                color: #FFFFFF                
+        &__shadow-button 
+            +pBold
+            color: $textColor
+            padding: 9px 27px
+            position: absolute
+            left: calc( 50% - 55px )
+            top: calc( 50% - 22px )
+            display: none
+            background: linear-gradient(90deg, #F8CA00 0%, #F8A400 100%)
+            border-radius: 20px
+            transition: 0.5s all
+    
+    .games-item:hover > .games-item__shadow-button
+        display: block
+        transition: 0.5s all
+
+    .games-item:hover .games-item__image img
+        opacity: 0.6
+
+
+.section__review
+    margin: 80px auto 0px
+    +_600
+        margin-top: 40px
+    &__title 
+        h2 
+            +H2
+            color: $goldColor
+            text-shadow: 0px 1.60153px 0px #7A4558
+            
+            +_1400
+                margin: 0 20px
+            +_600
+                text-align: center
+                font-size: 36px
+
+    .review__items 
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 100%
+        margin-top: 20px      
+        +_1400
+            justify-content: center  
+        .review__item 
+            width: 49.3%
+            background-color: $mainLight
+            display: flex
+            align-items: center
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            border-radius: 20px
+            padding: 37px 35px
+            margin: 10px 0px
+            +_1400
+                width: 45%
+                margin: 10px
+            +_600
+                flex-direction: column
+                width: 95%
+        .review__img 
+            width: 80px
+            height: 80px
+            img
+                width: 100%
+                height: 100%
+        .review__text 
+            margin-left: 35px
+            +_600
+                margin: 15px 0 0
+                text-align: center
+            h3
+                +H3
+                
+                color: $textColor
+                +_600
+                    text-align: center
+            p
+                +P
+                color: $textColor
+                margin-top: 10px
+                max-width: 420px
+        .big 
+            width: 100%
+            +_1400
+                width: 92%
+            +_600
+                width: 95%
+
+.section__info 
+    margin-top: 80px
+    position: relative
+    +_1400
+        margin: 80px 20px 0px
+        +_600
+            margin: 40px 20px 0px
+    &::before 
+        content: url('../img/index/page-1-back-img-1.png')
+        display: block
+        position: absolute
+        right: calc( 0% - 412px )
+        top: calc( 50% - 212px )
+        z-index: -1
+        +_979
+            display: none
+    .info__top 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        +_979
+            flex-direction: column
+    .info__top-right 
+        h2
+            +H2
+            color: #F8CA00
+            text-shadow: 0px 1.60153px 0px #7A4558
+            
+            +_600
+                text-align: center
+                font-size: 36px
+        p
+            margin-top: 30px
+            +P
+            color: $textColor
+            max-width: 758px
+        span 
+            color: $goldColor
+            
+        ul
+            max-width: 758px
+            margin-top: 30px
+            margin-left: 25px
+            li
+                margin-top: 10px
+                +P
+                color: $textColor
+                &:first-child
+                    margin-top: 0
+
+    .info__top-left-img 
+        width: auto
+        height: auto
+        display: block
+        +_1400
+            margin-left: 20px
+        +_979
+            width: 80%
+            margin: 40px auto 0px
+
+    .info__bottom 
+        margin: 80px auto 0px
+        +_600
+            margin-top: 40px            
+
+    .section__back_image
+        position: absolute
+        z-index: 10
+        width: auto
+        height: auto
+        top: calc( 50% - 212px )
+        right: -1%
+        display: none
+        +_1170
+            display: block
+
+.payment-info 
+    margin: 80px auto 0px
+    background: #051131
+    border-radius: 20px
+    box-shadow: $shadow
+    +_1400
+        width: 95%
+    &__left 
+        +_1400
+            margin-right: 30px
+            +_1170
+                margin: 40px 0 10px 
+        img 
+            width: 100%
+    &__right 
+        max-width: 680px
+        +_1170
+            text-align: center
+            padding-top: 20px
+        h2
+            +H2
+            
+            color: $goldColor
+            border-text: 1px solid $goldColor
+            text-shadow: 0px 1.60153px 0px #7A4558
+        p
+            +P
+            color: $textColor
+            margin-top: 30px
+
+.payment-info-inner 
+    display: flex
+    padding: 32px 58px
+    justify-content: space-between
+    align-items: center
+    +_600
+        padding: 30px 20px
+    +_1170
+        flex-direction: column-reverse
+
+.section__software 
+    margin-top: 80px
+    position: relative
+    +_600
+        margin-top: 40px
+    &::before 
+        content: url('../img/index/page-1-back-img-2.png')
+        display: block
+        position: absolute
+        right: 1150px
+        top: -130px
+        z-index: -1
+        +_979
+            display: none
+    .section__software-inner 
+        +_1400
+            margin: 0 20px
+.software
+    &__title 
+        h2 
+            +H2
+            
+            color: $goldColor
+            border-text: 1px solid $goldColor
+            text-shadow: 0px 1.60153px 0px #7A4558
+            +_600
+                text-align: center
+        p
+            +P
+            color: $textColor
+            margin-top: 30px
+    &__list 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 10px
+    &__item 
+        width: 47%
+        +_600
+            width: 95%
+        h2
+            +H2
+            
+            color: $goldColor
+            border-text: 1px solid $goldColor
+            text-shadow: 0px 1.60153px 0px #7A4558
+            margin-top: 20px
+        p
+            +P
+            color: $textColor
+            margin-top: 10px
+        span 
+            color: $goldColor
+            
+    &__games-info 
+        margin-top: 30px
+        background: #192E63
+        border-radius: 20px
+        p
+            +P
+            color: $textColor
+            padding: 30px
+            +_600
+                text-align: center
+    
+.section__experience 
+    margin-top: 80px
+    +_600
+        margin-top: 40px
+    .experience 
+        position: relative
+        +_1400
+            margin: 0 20px
+        h2
+            +H2
+            
+            color: $goldColor
+            border-text: 1px solid $goldColor
+            text-shadow: 0px 1.60153px 0px #7A4558
+            +_979
+                text-align: center
+                font-size: 36px
+        p
+            +P
+            color: $textColor
+            margin-top: 30px
+            max-width: 800px
+        &__img 
+            display: block
+            position: absolute
+            right: 0
+            top: -185px
+            max-width: 750px
+            z-index: -1
+            +_979
+                display: none
+
+.section__player 
+    margin-top: 80px
+    +_1400
+            margin: 80px 20px 0px
+    +_600
+        margin-top: 40px
+    h2
+        +H2
+        
+        color: $goldColor
+        border-text: 1px solid $goldColor
+        text-shadow: 0px 1.60153px 0px #7A4558
+        +_979
+            text-align: center
+            font-size: 36px
+.player
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+    +_600
+        flex-direction: column
+        margin: 0
+    &__left-block-info 
+        width: 45%
+        +_600
+            width: 95%
+        p
+            +P
+            color: $textColor
+            margin-top: 30px
+        img 
+            +_600
+                display: none
+    &__right-block-info 
+        width: 45%
+        +_600
+            width: 95%
+        p
+            +P
+            color: $textColor
+            margin-top: 30px
+        img 
+            +_600
+                display: none
+                
+        
+.section__coins-info 
+    margin-top: 80px
+    +_1400
+            margin: 80px 20px 0px
+    +_600
+        margin-top: 40px
+    h2 
+        +H2
+        
+        color: $goldColor
+        border-text: 1px solid $goldColor
+        text-shadow: 0px 1.60153px 0px #7A4558
+        z-index: 1
+        +_979
+            text-align: center
+            font-size: 36px
+.coins-info 
+    display: flex
+    justify-content: space-between
+    +_979
+        flex-direction: column
+    &__list-left 
+        background: #051131
+        border-radius: 20px
+        padding: 50px 
+        max-width: 630px
+        margin-top: 30px
+        height: 100%
+        box-shadow: $shadow
+        +_1400
+            margin: 30px 20px 0px 0px
+        +_979
+            margin: 30px auto 0px
+            max-width: 100%
+        li
+            +P
+            color: $textColor
+            margin-left: 50px
+            margin-top: 30px
+            list-style-type: none
+            position: relative
+            &::before
+                content: url("../img/index/+.png")
+                display: block
+                width: 28px
+                position: absolute
+                left: -55px
+                top: calc( 50% - 12px)
+            &:first-child
+                +_979
+                    margin-top: 0
+    &__list-right 
+        background: #051131
+        border-radius: 20px
+        padding: 50px 
+        max-width: 630px
+        height: 100%
+        margin-top: 30px
+        +_1400
+            margin: 30px 0px 0px
+        +_979
+            margin: 30px auto 0px
+            max-width: 100%
+            width: 100%
+        li
+            +P
+            color: $textColor
+            margin-left: 50px
+            margin-top: 30px
+            list-style-type: none
+            position: relative
+            &::before
+                content: url("../img/index/-.png")
+                display: block
+                width: 28px
+                position: absolute
+                left: -55px
+                top: calc( 50% - 18px)
+            &:first-child
+                +_979
+                    margin-top: 0
+
+.section__fag 
+    margin-top: 80px
+    +_1400
+            margin: 80px 20px 0px
+    +_600
+        margin-top: 40px    
+.fag 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +_1170
+        flex-direction: column
+    &__left-block 
+        max-width: 630px
+        +_1400
+            margin-right: 20px
+        h2
+            +H2
+            
+            color: $goldColor
+            border-text: 1px solid $goldColor
+            text-shadow: 0px 1.60153px 0px #7A4558
+        h3
+            +H3
+            
+            color: $goldColor
+            border-text: 1px solid $goldColor
+            text-shadow: 0px 1.60153px 0px #7A4558
+            margin-top: 30px
+        p
+            +P
+            color: $textColor
+            margin-top: 10px
+    &__right-block 
+        max-width: 630px
+        background: #192E63
+        border-radius: 20px
+        padding: 50px 60px
+        +_1170
+            margin-top: 40px
+        +_600
+            padding: 50px 30px 
+        h2
+            +H2
+            
+            color: $goldColor
+            border-text: 1px solid $goldColor
+            text-shadow: 0px 1.60153px 0px #7A4558
+            +_600
+                text-align: center
+        p
+            +P
+            color: $textColor
+            margin-top: 30px
+            a
+                color: $textColor
+        .fag__link
+            color: $goldColor
+            
+        
+        ul
+            margin-top: 30px
+            li 
+                +P
+                color: $textColor
+                margin-left: 30px
+
+.section__bottom-form 
+    margin-top: 80px
+    margin-bottom: 80px
+    position: relative
+    +_1400
+            margin: 80px 20px 80px
+    +_600
+        margin-bottom: 40px
+        margin-top: 40px    
+    &::before
+        content: url('../img/index/footer-img.png')
+        display: block
+        position: absolute
+        left: 945px
+        top: -45px
+        +_979
+            display: none
+.section__bottom-form-inner 
+    background: #051131
+    border-radius: 20px
+    max-width: 955px
+    display: block
+    margin: 0 auto
+    box-shadow: $shadow
+.bottom-form 
+    padding: 30px 50px
+    +_600
+        padding: 30px 20px
+    &__title 
+        h2
+            +H2
+            
+            color: $goldColor
+            border-text: 1px solid $goldColor
+            text-shadow: 0px 1.60153px 0px #7A4558
+            text-align: center
+            +_600
+                font-size: 36px
+        p
+            +P
+            color: $textColor
+            margin-top: 10px
+            text-align: center
+    &__forms 
+        margin-top: 34px
+        +_979
+            width: 100%
+        label
+            +pBold
+            color: $textColor
+            display: block
+            margin-left: 2px
+        input
+            margin-top: 7px
+            background: $backgroundColor
+            border-radius: 20px
+            outline: none
+            +_979
+                width: 100%
+        input[placeholder], textarea
+            +P
+            color: $textColor
+            opacity: 0.5
+            padding: 18px 26px    
+    &__coments 
+        width: 100%
+        min-height: 193px    
+        resize: none
+        margin-top: 7px
+        background: $backgroundColor
+        border-radius: 20px
+        outline: none
+    &__forms-inner    
+        display: flex
+        justify-content: space-between
+        align-items: end
+        margin-top: 14px
+        +_979
+            flex-direction: column
+            align-items: center
+    .bottom-form__inputs
+        +_979
+            width: 100%
+    .margin-top
+        +_979
+            margin-top: 10px
+    button
+        background: $goldColor
+        border-radius: 20px
+        +pBold
+        padding: 11px 45px
+        height: 50px
+        cursor: pointer
+        transition: 0.1s all
+        margin-bottom: 7px
+        box-shadow: 0px 0px 30px rgba(248, 202, 0, 0.7)
+        z-index: 100
+        &:hover
+            color: $textColor
+        +_979
+            margin-top: 40px
+            width: 100%
+            max-width: 300px
+        

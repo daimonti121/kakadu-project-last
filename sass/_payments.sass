@@ -1,0 +1,175 @@
+@import "media"
+@import "fonts"
+@import "burger"
+@import "vars"
+@import "popups"
+
+.section__financial 
+    margin-top: 80px
+    position: relative
+    +_1400
+        margin: 80px 20px 80px
+    +_600
+        margin: 40px 20px 0px  
+    &::before
+        content: url('../img/games/back-img-1.png')
+        display: block
+        position: absolute
+        left: 1150px
+        top: -50px
+        z-index: -1
+        +_979
+            display: none
+    .financial 
+        display: flex
+        align-items: center
+        justify-content: space-between
+        +_979
+            flex-direction: column
+        &__left-block 
+            max-width: 630px
+            +_979
+                max-width: 100%                
+            h2
+                +H2
+                color: $goldColor
+                border-text: 1px solid $goldColor
+                text-shadow: 0px 1.60153px 0px #7A4558
+                +_600
+                    text-align: center
+                    font-size: 36px
+            p
+                +P
+                color: $textColor
+                margin-top: 30px
+        &__right-block 
+            max-width: 630px
+            background: #051131
+            border-radius: 20px
+            padding: 33px
+            +_979
+                max-width: 100%
+                margin-top: 40px
+            h3
+                +H3
+                color: $goldColor
+                border-text: 1px solid $goldColor
+                text-shadow: 0px 1.60153px 0px #7A4558
+                +_600
+                    text-align: center
+                    font-size: 36px 
+            p
+                +P
+                color: $textColor
+                margin-top: 20px
+
+.no-image
+    margin: 80px 0px 0px
+    position: relative
+    &::before
+        display: none    
+    +_1400
+        margin: 80px 20px 0px
+    +_600
+        margin: 40px 20px 0px  
+    p
+        max-width: 100%
+    h2 
+        position: relative
+        display: inline-block
+    .after-one::after
+        content: 'NO FEE'
+        display: block
+        width: 128px
+        font-family: 'RocknRoll One'
+        font-size: 22px
+        line-height: 32px
+        text-transform: uppercase
+        color: #FFFFFF
+        position: absolute
+        left: calc(100% + 30px)
+        top: calc(50% - 18px)
+        background: linear-gradient(90deg, #F8CA00 0%, #F8A400 100%)
+        border-radius: 17px
+        text-align: center
+        padding: 2px 0px 6px
+        +_600
+            position: relative
+            top: 0
+            left: calc( 50% - 64px )
+            margin-top: 10px
+    .table__title td
+        +_600
+            line-height: 20px
+    .table
+        +_600
+            border-spacing: 3px
+    .first-td 
+        td
+            &:nth-child(1)                    
+                background: linear-gradient(90deg, #F8CA00 0%, #F8A400 100%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent                
+                +H3
+                font-weight: 700
+                +_600
+                    font-size: 12px
+    .second-td 
+        td
+            &:nth-child(2)                    
+                +P 
+                text-align: left
+                color: $textColor
+                text-align: center
+                +_600
+                    font-size: 14px
+        td
+            &:nth-child(3)                    
+                +P 
+                text-align: left
+                color: $textColor
+                text-align: center
+                +_600
+                    font-size: 16px    
+    .four-td        
+        td            
+            &:nth-child(4)                    
+                background: linear-gradient(90deg, #F8CA00 0%, #F8A400 100%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                +H2         
+                +_600
+                    font-size: 20px  
+    .font-size
+        td
+            &:last-child   
+                font-size: 39px
+                +_600
+                    font-size: 20px  
+    .back-image
+        position: relative
+        &::before
+            content: url('../img/payments/home__sliders__bg 3.png')
+            display: block
+            position: absolute
+            left: calc(100% - 150px)
+            bottom: calc(100% - 34px)
+            z-index: -1
+            +_979
+                display: none 
+.section__fag
+.section__fag-margin 
+    margin-top: 60px
+    +_600
+        margin-top: 30px
+    .fag__last
+        position: relative
+        .fag__right-block
+            background: none
+        .fag__right-block-image
+            position: absolute
+            left: calc(50% - 323px)
+            top: calc(20% - 151px)
+            z-index: -1
+            +_979
+                display: none

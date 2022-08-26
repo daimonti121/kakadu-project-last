@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#5900ff">
+    <title>Kakadu - Casino</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!-- Start Body -->
+
+<body class="body">   
+    <div class="wrapper">
+
+        <!-- Start Header -->
+
+        <header class="header">
+            <div class="header__container">                
+                <div class="header__right-block">
+                    <a href="index.html" class="header__logo"><img src="img/index/logo.png" alt="logo"></a>
+                    <nav class="header__menu menu" oncontextmenu="return false;">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="promotion.html" class="menu__link">Promotion</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="games.html" class="menu__link">Games</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="payments.html" class="menu__link" oncontextmenu="return false;">Payments</a>
+                            </li>
+                            <li class="menu__item gold">
+                                <a href="vip-club.html" class="menu__link gold-color">VIP-Club</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__left-block">
+                    <button class="header__login-button open-popup" data-popup="popup1">Login</button>
+                    <button class="header__sign-button open-popup" data-popup="popup2">SIGN UP</button>
+                </div>
+
+                <!-- Start Mobile menu-burger -->
+
+                <div class="burger-menu">
+                    <a href="#" class="burger-menu_button">
+                        <span class="burger-menu_lines"></span>
+                    </a>
+                    <nav class="burger-menu_nav">
+                        <div class="burger-menu_flex_border">
+                        <a href="#section-1" class="burger-menu_link">Promotion</a>
+                        <a href="#section-2" class="burger-menu_link">Games</a>
+                        <a href="#section-3" class="burger-menu_link">Payments</a>
+                        <a href="#section-2" class="burger-menu_link">VIP-Club</a>
+                        </div>
+                    </nav>
+                    <div class="burger-menu_overlay"></div>
+                </div> 
+
+                <!-- Finish Mobile menu-burger -->
+
+            </div> 
+            <div class="header__title title">
+                <div class="title__container">
+                    <h1>Fly high with <br>
+                        kakadu casino!</h1>
+                    <p class="title__text">Welcome package:<br>
+                        $/€500 +150FS<br>
+                        for the initial 4 deposits</p>
+
+                    <!-- Start Modal windov Login-->
+
+                    <button class="title__button open-popup" data-popup="popup2">SIGN UP</button>
+                    <div id="popup1" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Login</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" placeholder="Email">                                
+                                    <label for="password">Password</label>                                       
+                                        <div class="password">
+                                            <input type="password" id="password-input-1" placeholder="Password" name="password">
+                                            <a href="#" class="password-control-1" onclick="return show_hide_password_one(this);"></a>
+                                        </div>
+
+                                    <input class="submit" type="submit" value="login">
+                                </form>
+                                <a class="content__link" href="#">Forgot your Password?</a>
+                                <p class="content__footer-link">Don’t have an account? <a href="#" class="open-popup" data-popup="popup2">Sign UP</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finish Modal windov -->
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <div id="popup2" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Step 1 of 2</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" pattern=".+@gmail.com" placeholder="Email" required>                                    
+                                    <label for="password">Password</label>
+                                    <div class="password">
+                                        <input type="password" id="password-input-2" placeholder="Password" name="password">
+                                        <a href="#" class="password-control-2" onclick="return show_hide_password_two(this);"></a>
+                                    </div>
+
+                                        <label for="email">Currency</label>
+                                        <div class="placeholder">
+                                            <select placeholder="EUR">
+                                                <option>EUR</option>
+                                                <option>Test</option>
+                                                <option>Test</option>
+                                            </select>
+                                            <button class="btn__placeholder">
+                                                <img src="img/index/arrowsvg.svg" alt="no-image">
+                                            </button>
+                                        </div>
+                                    <input type="submit" class="submit" value="Next"></input>
+                                </form>
+                                <p class="open-popup content__footer-link" data-popup="popup3">Already have an account? <a href="#">Login</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <!-- Start Modal windov Login-->
+
+                    <div id="popup3" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Login</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" placeholder="Email">                                
+                                    <label for="password">Password</label>                                       
+                                        <div class="password">
+                                            <input type="password" id="password-input-1" placeholder="Password" name="password">
+                                            <a href="#" class="password-control-1" onclick="return show_hide_password_one(this);"></a>
+                                        </div>
+
+                                    <input class="submit" type="submit" value="login">
+                                </form>
+                                <a class="content__link" href="#">Forgot your Password?</a>
+                                <p class="content__footer-link">Don’t have an account? <a href="#" class="open-popup" data-popup="popup4">Sign UP</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finish Modal windov -->
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <div id="popup4" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Step 1 of 2</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" pattern=".+@gmail.com" placeholder="Email" required>                                    
+                                    <label for="password">Password</label>
+                                    <div class="password">
+                                        <input type="password" id="password-input-2" placeholder="Password" name="password">
+                                        <a href="#" class="password-control-2" onclick="return show_hide_password_two(this);"></a>
+                                    </div>
+
+                                        <label for="email">Currency</label>
+                                        <div class="placeholder">
+                                            <select placeholder="EUR">
+                                                <option>EUR</option>
+                                                <option>Test</option>
+                                                <option>Test</option>
+                                            </select>
+                                            <button class="btn__placeholder">
+                                                <img src="img/index/arrowsvg.svg" alt="no-image">
+                                            </button>
+                                        </div>
+                                    <input type="submit" class="submit" value="Next"></input>
+                                </form>
+                                <p class="open-popup content__footer-link" data-popup="popup3">Already have an account? <a href="#">Login</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Start Modal windov Sing In-->
+
+                </div>
+            </div>
+        </header>
+        <!-- Finish Header -->
+
+        <!-- Start Main -->
+
+        <main class="main">
+            <div class="main__container">
+
+                <!-- Start Section Games -->
+
+                <section class="section__games">
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-1.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>Wolf Gold</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-2.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>Aloha King Elvis</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-3.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>Madam Destiny Megaways</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-4.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>Book of Dead</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-5.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>Gates of Olympus</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-6.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>Magic Spins</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-7.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>Big Bass Bonanza</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-8.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>Fruit Million</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-9.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>Wild Cash</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-10.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>HellHot 100</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-11.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>Hit Slot 2021</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                    <a href="#" class="section__games-item games-item">
+                        <div class="games-item__image"><img src="img/index/menu-game-12.png" alt="games"></div>
+                        <div class="games-item__tile">
+                            <p>Madame Destiny</p>
+                        </div>
+                        <div class="games-item__shadow-button">
+                            PLAY
+                        </div>
+                    </a>
+                </section>
+
+                <!-- Finish Section Games -->
+
+                <!-- Start Review Games -->
+
+                <section class="section__review">
+                    <div class="section__review__title">
+                        <h2>Kakadu Casino Review</h2>
+                    </div>
+
+                    <div class="section__review-items review__items">
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-1.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>License</h3>
+                                <p>Malta Gaming Authority</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-8.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Legal address</h3>
+                                <p>206 Wisely House, Old Bakery Street, Valletta, Malta</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-2.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Language</h3>
+                                <p>German, Finnish, English, Norwegian</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-9.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Currencies</h3>
+                                <p>EUR, USD, CAD, NOK, PLN, NZD, JPY</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-3.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Payment systems</h3>
+                                <p>E-wallets (Skrill, Paysafecard, Neteller), Credit cards (Maestro, Mastercard, Visa)</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-10.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Game providers</h3>
+                                <p>BGaming, Boomerang Studios, Booming Games, Amatic</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-4.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Minimum deposit</h3>
+                                <p>20 EUR</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-11.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Maximum deposit</h3>
+                                <p>1000-4000 EUR</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-5.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Wagering requirement</h3>
+                                <p>x40</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-12.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Wagering time</h3>
+                                <p>Instant for e-wallets and bank transfers, 3 - 5 banking days for credit cards</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-6.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Mobile app</h3>
+                                <p>Yes (Android and iOS)</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-13.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Bonuses</h3>
+                                <p>Weekly bonuses, deposit bonuses, cashback, tournaments</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-7.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>VIP program</h3>
+                                <p>VIP-club</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item">
+                            <div class="review__img"><img src="img/index/Icon-14.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Support</h3>
+                                <p>24/7</p>
+                            </div>
+                        </div>
+
+                        <div class="review__item big">
+                            <div class="review__img"><img src="img/index/Icon-15.svg" alt="no-image"></div>
+                            <div class="review__text">
+                                <h3>Game types</h3>
+                                <p>Slots, Table Games, Card games, Live casino, Video poker</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Finish Review Games -->
+
+                <!-- Start Section info -->
+
+                <section class="section__info">
+                    <div class="info__top">
+                        <div class="info__top-right">
+                            <h2>Registration Process</h2>
+                            <p>Kakadu Casino is one of the top gambling sites where players can get the best experience. It has a simple registration process like most other popular casinos.</p>
+                            <p><span>The first step</span> to registering at Kakadu Casino is to click the «Sign-up» button. Once you do that, the registration page shows up on your screen with some personal data you should fill in. They include your full name, email address, gender, residential address, mobile phone, postal code, and date of birth. Ensure the details you provide for each field are correct; we will have to vet it later.</p>
+                            <p><span>The next step is to verify</span> your account through the verification link sent to the email address you’ve provided. When you click the link, it takes you straight to the page where you can set your default username and password. </p>
+                            <p>The good thing is that you don’t have to go through the stressful registration process all over again; It’s a one-time thing you must do as a new member. After completing the registration process, you can deposit into your account to play your favourite games.</p>
+                        </div>
+                        <div class="info__top-left">
+                            <img src="img/index/registr.png" alt="step 1 of 2" class="info__top-left-img">
+                        </div>
+                    </div>
+                    <div class="info__bottom info__top">
+                        <div class="info__top-right">
+                            <h2>How to Sign in and Access Your Account</h2>
+                            <p>Subsequently, you can log into your account using your username and password. Once you log in, you can view the current offers at Kakadu Casino and access your account. Your personal account will provide you with the following information:</p>
+                            <ul>
+                                <li><span>Wallet:</span> You’ll get information about your balance, withdrawals, deposits, and transaction history.</li>
+                                <li><span>Game History:</span> You’ll get more information about your previous games.</li>
+                                <li><span>Responsible Gaming:</span> You can access this section if you want restrictions on your account.</li>
+                                <li><span>Profile:</span> This section shows your data along with verification information.</li>
+                            </ul>
+                            <p>We utilise a KYC (Know Your Customers) process to vet the information provided by our players. That way, we know who the real players are before allowing them to start playing. Some of the information you’ll have to provide for account verification on our site are:</p>
+                            <ul>
+                                <li><span>Address:</span> Players can provide a utility bill or any proof with their address and name.</li>
+                                <li><span>Identity:</span> Identification documents like a driver’s license or a passport.</li>
+                                <li><span>Payment:</span> You’ll need to show your receipt from the payments you’ve made.</li>
+                                <li><span>Mobile phone:</span> We’ll verify your mobile number.</li>
+                            </ul>
+                        </div>
+                        <div class="info__top-left">
+                            <img src="img/index/login.png" alt="step 1 of 2" class="info__top-left-img">
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Finish Section info -->
+
+                <!-- Start Payment info -->
+
+                <section class="payment-info">
+                    <div class="payment-info-inner">
+                        <div class="payment-info__left">
+                            <img src="img/index/payment.png" alt="payment">
+                        </div>
+                        <div class="payment-info__right">
+                            <h2>Payment Options</h2>
+                            <p>Players who want to win real money need to fund their casino accounts to stand a chance. You can choose the most suitable payment options available on our site. Remember that the minimum and maximum deposit you can make at Kadaku Casino is between €20 - €4000.</p>
+                            <p>The most preferred withdrawal options on the platform are e-wallets, credit cards, and bank transfers. The withdrawal limit is between €20 - €4000 as well. </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Finish Payment info -->
+
+                <!-- Start Games and Software Providers -->
+
+                <section class="section__software">
+                    <div class="section__software-inner software">
+                        <div class="software__title">
+                            <h2>Games and Software Providers</h2>
+                            <p>Kakadu Casino has hundreds of trusted and licensed games from the best software providers in the iGaming industry. Also, these games are accessible on desktop and mobile devices in free or real money modes. Some of the popular games are:</p>
+                        </div>
+                        <div class="software__list">
+                            <div class="software__item">
+                                <h2>01</h2>
+                                <p><span>Slot Machines: </span>We have over 150 slot games from top providers like Amatic, BGaming, Booming Games, Boomerang Studios, and 1x2 Gaming.</p>
+                            </div>
+                            <div class="software__item">
+                                <h2>02</h2>
+                                <p><span>Card Games: </span>We also feature over 50 card games in our lobby. These titles are variations of classic games like blackjack and baccarat. The software providers of these games are Betsoft Gaming, BGaming, Evolution, EGT, Iron Dog Studio, and more.</p>
+                            </div>
+                            <div class="software__item">
+                                <h2>03</h2>
+                                <p><span>Roulette: </span>We have over 30 roulette variations in the library for players that love varieties. Some of them are Auto-Roulette, Arabic Roulette, Instant Roulette, and American Roulette.</p>
+                            </div>
+                            <div class="software__item">
+                                <h2>04</h2>
+                                <p><span>Live Casino: </span>We also have a live casino section where players can enjoy their favourite games in real time. Some of these include roulette, poker, and baccarat.</p>
+                            </div>
+                            <div class="software__item">
+                                <h2>05</h2>
+                                <p><span>Table Games: </span>Our game looby features over 20 table card games as well. The category primarily consists of poker variations such as Texas Hold’em Bonus, Jacks or Better, 3-Hand Casino Hold’em, and Side Bet City.</p>
+                            </div>
+                        </div>
+                        <div class="software__games-info">
+                            <p>Every player at Kakadu will get value for their money because we feature only top-quality games. Furthermore, these games are built on licensed software, offering high return to player (RTP) percentages to players. We partner with leading software providers like Evolution Gaming, Microgaming, NetEnt, and Amatic.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Finish Games and Software Providers -->
+                
+                <!-- Start Experience info -->
+
+                <section class="section__experience">
+                    <div class="section__experience-inner experience">
+                        <h2>Kakadu Casino Mobile Experience</h2>
+                        <p>At Kakadu Casino, we prioritise convenience above all else. As a result, we have a website with a simple design and impressive user experience. Players can easily access our site on their smartphones and tablets. What’s even more interesting is that you get the same user experience as the desktop version. Also, our site is adaptive to any screen size and has a fast processing time. You’ll get the information you seek on our site since all our pages load fast.</p>
+                        <p>We also have provisions for players who prefer to use a mobile app to access their favourite casino games. You can download the Kakadu App on App Store and Google Play. After downloading the app, you can easily install and start playing your favourite games.</p>
+                        <img src="img/index/MobileKakdu.png" alt="mobile-cacadu" class="experience__img">
+                    </div>
+                </section>
+
+                <!-- Finish Experience info -->
+
+                <!-- Start Players info -->
+
+                <section class="section__player">
+                    <h2>Kakadu Casino Player Reviews</h2>
+                    <div class="section__player-inner player">
+                        <div class="player__left-block-info">
+                            <img src="img/index/Icon-midle-1.svg" alt="icon">
+                            <p>We choose to play at Kakadu Casino because they offer a wide range of games. These games are developed and licensed by well-known providers. </p>
+                            <p>These games include slots, table games, video poker, and live dealer titles. What sets their games apart is the brilliant design and engaging gameplay that you might not find anywhere else.</p>
+                        </div>
+                        <div class="player__right-block-info">
+                            <img src="img/index/Icon-midle-2.svg" alt="icon">
+                            <p>Moreover, Kakadu Casino’s games are safe and fair to all players looking to win real money. Players can enjoy games for free or real money when they fund their accounts. </p>
+                            <p>The online operator has safe and secure payment options you can use to deposit and cash out your winnings. The platform also has 24/7 customer support that quickly responds to your questions and problems.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Finish Players info -->
+
+                <!-- Start Coins info -->
+
+                <section class="section__coins-info">
+                    <h2>Pros and Cons of Kakadu Casino</h2>
+                    <div class="section__coins-info-inner coins-info">
+                        <ul class="coins-info__list-left">
+                            <li>A vast collection of licensed games from leading software providers. These games range from slots to table games and live dealer titles</li>
+                            <li>Safe, fast, and reliable payment options you can use to deposit and withdraw funds</li>
+                            <li>Players can try the games for free before wagering real money</li>
+                            <li>There are generous bonus offers for both new and existing members</li>
+                            <li>Players can access the Kakadu website on their mobile devices. Also, the casino has a mobile app for Android and iOS devices</li>
+                            <li>24/7 customer support is available in two languages; English and German</li>
+                        </ul>
+                        <ul class="coins-info__list-right">
+                            <li>You need to make a deposit if you want to win real money</li>
+                            <li>Players below 18 years are not allowed to register and play</li>
+                            <li>Cryptocurrencies aren’t supported</li>
+                            <li>The games you can access are dependent on your location</li>
+                            <li>You can’t use a promo code</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Finish Coins info -->
+
+                <!-- Start FAQ block -->
+
+                <section class="section__fag">
+                    <div class="fag">
+                        <div class="fag__left-block">
+                            <h2>FAQ</h2>
+                            <h3>How can I verify my account?</h3>
+                            <p>You must provide some documents to pass the account verification process at Kakadu Casino. Some of these documents are a photo of identification document, a statement of deposit, and proof of telephone number.</p>
+                            <h3>Is Kakadu Casino a legit site?</h3>
+                            <p>Yes, the casino is entirely legit, licensed and regulated by the Malta Gaming Authority.</p>
+                            <h3>Is Kakadu Casino a safe platform to play?</h3>
+                            <p>Kakadu Casino is a safe and secure venue to play. We use licensed gaming software, ensuring players a fair online gambling environment.</p>
+                            <h3>How do I withdraw my winnings at Kakadu Casino?</h3>
+                            <p>Go to our payment page and choose the most convenient payment option. Then, you can provide the required information and the amount you want to withdraw.</p>
+                        </div>
+                        <div class="fag__right-block">
+                            <h2>Customer Support</h2>
+                            <p>You can reach out to the support team anytime you need help. It is available 24/7 in two different languages; English and German. Check out our support page to fill out our contact form. The contact page has columns where you can provide your email address and the problem you want us to know.</p>
+                            <p>Additionally, you can use the live chat option, where you can chat with our technical support in real time. If you have concerns about any scam-related issues or the safety of personal data, send us a message at <a href="mailto:dpo@n1interactive.com">dpo@n1interactive.com</a>. You can also contact our support team via <a href="mailto:support@casinokakadu.com">support@casinokakadu.com</a>.</p>
+                            <p class="fag__link">Our support team will help you when you have issues related to:</p>
+                            <ul>
+                                <li>Registration and verification of your account</li>
+                                <li>Log in issues</li>
+                                <li>Questions about games and rules</li>
+                                <li>Financial transactions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Finish FAQ block -->
+
+                <!-- Start Bottom Form -->
+
+                <section class="section__bottom-form">
+                    <div class="section__bottom-form-inner bottom-form">
+                        <div class="bottom-form__title">
+                            <h2>Leave a reply</h2>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                        </div>
+                        <form class="bottom-form__forms">
+                            <label for="comment">Comment*</label>
+                            <textarea id="comment" class="bottom-form__coments" placeholder="Comment" required></textarea>
+                            <div class="bottom-form__forms-inner">
+                                <div class="bottom-form__inputs">
+                                    <label for="name">Name*</label>
+                                    <input id="name" type="text" class="bottom-form__name" placeholder="Name*" required>
+                                </div>
+                                <div class="bottom-form__inputs margin-top">
+                                    <label for="Email">Email*</label>
+                                    <input id="Email" type="email" class="bottom-form__email" placeholder="Email" required>
+                                </div>                                
+                                <button>POST</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Finish Bottom Form -->
+
+
+            </div>
+        </main>
+
+        <!-- Finish Main -->
+
+        <!-- Start Footer -->
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__top-block">
+                    <a href="#" class="footer__logo"><img src="img/index/logo.png" alt="logo"></a>
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Slots</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Bonuses</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Finance</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Loyality Program</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Responsible Gambling</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <p class="footer__info">2022 © site Kakadu is licensed and regulated by the Malta Gaming Authority under the licences: MGA/B2C/394/2017 (issued on 01/08/2018). All rights reserved. Gambling can be addictive. Play responsibly. Only accepts customers over 18 years of age.</p>
+            </div>
+        </footer>
+        
+        <!-- Finish Footer -->
+
+    </div>  
+    
+        <!-- Start Script -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/burger.js"></script>
+        <script src="js/popups.js"></script>        
+        <script src="js/inputPassword.js"></script>
+        <script src="js/noCopyText.js"></script>        
+        <!-- Finish Script -->
+</body>
+
+<!-- Finish Body -->
+</html>

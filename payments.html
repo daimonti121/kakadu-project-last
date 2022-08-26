@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#5900ff">
+    <title>Kakadu - Casino - Payments</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!-- Start Body -->
+
+<body class="body">   
+    <div class="wrapper">
+
+        <!-- Start Header -->
+
+        <header class="header">
+            <div class="header__container">                
+                <div class="header__right-block">
+                    <a href="index.html" class="header__logo"><img src="img/index/logo.png" alt="logo"></a>
+                    <nav class="header__menu menu" oncontextmenu="return false;">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="promotion.html" class="menu__link">Promotion</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="games.html" class="menu__link">Games</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="payments.html" class="menu__link" oncontextmenu="return false;">Payments</a>
+                            </li>
+                            <li class="menu__item gold">
+                                <a href="vip-club.html" class="menu__link gold-color">VIP-Club</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__left-block">
+                    <button class="header__login-button open-popup" data-popup="popup1">Login</button>
+                    <button class="header__sign-button open-popup" data-popup="popup2">SIGN UP</button>
+                </div>
+
+                <!-- Start Mobile menu-burger -->
+
+                <div class="burger-menu">
+                    <a href="#" class="burger-menu_button">
+                        <span class="burger-menu_lines"></span>
+                    </a>
+                    <nav class="burger-menu_nav">
+                        <div class="burger-menu_flex_border">
+                        <a href="#section-1" class="burger-menu_link">Promotion</a>
+                        <a href="#section-2" class="burger-menu_link">Games</a>
+                        <a href="#section-3" class="burger-menu_link">Payments</a>
+                        <a href="#section-2" class="burger-menu_link">VIP-Club</a>
+                        </div>
+                    </nav>
+                    <div class="burger-menu_overlay"></div>
+                </div> 
+
+                <!-- Finish Mobile menu-burger -->
+
+            </div> 
+            <div class="header__title title">
+                <div class="title__container">
+                    <h1>Fly high with <br>
+                        kakadu casino!</h1>
+                    <p class="title__text">Welcome package:<br>
+                        $/€500 +150FS<br>
+                        for the initial 4 deposits</p>
+
+                    <!-- Start Modal windov Login-->
+
+                    <button class="title__button open-popup" data-popup="popup2">SIGN UP</button>
+                    <div id="popup1" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Login</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" placeholder="Email">                                
+                                    <label for="password">Password</label>                                       
+                                        <div class="password">
+                                            <input type="password" id="password-input-1" placeholder="Password" name="password">
+                                            <a href="#" class="password-control-1" onclick="return show_hide_password_one(this);"></a>
+                                        </div>
+
+                                    <input class="submit" type="submit" value="login">
+                                </form>
+                                <a class="content__link" href="#">Forgot your Password?</a>
+                                <p class="content__footer-link">Don’t have an account? <a href="#" class="open-popup" data-popup="popup2">Sign UP</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finish Modal windov -->
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <div id="popup2" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Step 1 of 2</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" pattern=".+@gmail.com" placeholder="Email" required>                                    
+                                    <label for="password">Password</label>
+                                    <div class="password">
+                                        <input type="password" id="password-input-2" placeholder="Password" name="password">
+                                        <a href="#" class="password-control-2" onclick="return show_hide_password_two(this);"></a>
+                                    </div>
+
+                                        <label for="email">Currency</label>
+                                        <div class="placeholder">
+                                            <select placeholder="EUR">
+                                                <option>EUR</option>
+                                                <option>Test</option>
+                                                <option>Test</option>
+                                            </select>
+                                            <button class="btn__placeholder">
+                                                <img src="img/index/arrowsvg.svg" alt="no-image">
+                                            </button>
+                                        </div>
+                                    <input type="submit" class="submit" value="Next"></input>
+                                </form>
+                                <p class="open-popup content__footer-link" data-popup="popup3">Already have an account? <a href="#">Login</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <!-- Start Modal windov Login-->
+
+                    <div id="popup3" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Login</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" placeholder="Email">                                
+                                    <label for="password">Password</label>                                       
+                                        <div class="password">
+                                            <input type="password" id="password-input-1" placeholder="Password" name="password">
+                                            <a href="#" class="password-control-1" onclick="return show_hide_password_one(this);"></a>
+                                        </div>
+
+                                    <input class="submit" type="submit" value="login">
+                                </form>
+                                <a class="content__link" href="#">Forgot your Password?</a>
+                                <p class="content__footer-link">Don’t have an account? <a href="#" class="open-popup" data-popup="popup4">Sign UP</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finish Modal windov -->
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <div id="popup4" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Step 1 of 2</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" pattern=".+@gmail.com" placeholder="Email" required>                                    
+                                    <label for="password">Password</label>
+                                    <div class="password">
+                                        <input type="password" id="password-input-2" placeholder="Password" name="password">
+                                        <a href="#" class="password-control-2" onclick="return show_hide_password_two(this);"></a>
+                                    </div>
+
+                                        <label for="email">Currency</label>
+                                        <div class="placeholder">
+                                            <select placeholder="EUR">
+                                                <option>EUR</option>
+                                                <option>Test</option>
+                                                <option>Test</option>
+                                            </select>
+                                            <button class="btn__placeholder">
+                                                <img src="img/index/arrowsvg.svg" alt="no-image">
+                                            </button>
+                                        </div>
+                                    <input type="submit" class="submit" value="Next"></input>
+                                </form>
+                                <p class="open-popup content__footer-link" data-popup="popup3">Already have an account? <a href="#">Login</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Start Modal windov Sing In-->
+
+                </div>
+            </div>
+        </header>
+        <!-- Finish Header -->
+
+        <!-- Start Main -->
+
+        <main class="main">
+            <div class="main__container">
+
+                <!-- Start financial block -->
+
+                <section class="section__financial">
+                    <div class="section__financial-inner financial">
+                        <div class="financial__left-block">
+                            <h2>Casino Kakadu Financial Transactions</h2>
+                            <p>Kakadu Casino has a safe and secure financial system that allows players to deposit and withdraw funds quickly. You should check our payments page to see the available payment options, currencies, and transaction limits. Understanding how our payment system works at Kakadu Casino will help you get the best gambling experience on the platform.</p>
+                        </div>
+                        <div class="financial__right-block">
+                            <h3>Financial Operations</h3>
+                            <p>Players can choose any of our available payment options if they want to play real money games. We have strict rules guiding the deposit and withdrawal of funds at Kakadu Casino. We’ll be exploring more about these payment options in subsequent sections.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Finish financial block -->
+
+                <!-- Start Providers block -->
+
+                <section class="section__providers no-image back-image">
+                    <h2 class="after-one">Deposit Options</h2>
+                    <p>Kakadu Casino features fast, reliable and safe deposit methods you can use to fund your account. We accept several payment options, including credit cards and e-wallets. Also, you can make deposits between $10 to $4000 using any of the available payment options. Here are the deposit options you’ll find at Kakadu Casino:</p>
+                    <div class="section__providers-inner table">
+                        <table class="table">
+                            <tbody>
+                                <tr class="table__title">
+                                    <td>Payment method</td>
+                                    <td>Type</td>
+                                    <td>Processing time</td>
+                                    <td>Limit per TX</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>Visa</td>
+                                    <td>Credit card</td>
+                                    <td>Instant</td>
+                                    <td>$20 - $1000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>Mastercard</td>
+                                    <td>Credit card</td>
+                                    <td>Instant</td>
+                                    <td>$20 - $1000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>Maestro</td>
+                                    <td>Credit card</td>
+                                    <td>Instant</td>
+                                    <td>$20 - $1000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>Skrill</td>
+                                    <td>E-wallet</td>
+                                    <td>Instant</td>
+                                    <td>$20 - $1000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>paysafecard</td>
+                                    <td>E-wallet</td>
+                                    <td>Instant</td>
+                                    <td>$20 - $1000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>Neteller</td>
+                                    <td>E-wallet</td>
+                                    <td>Instant</td>
+                                    <td>$20 - $1000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>ecoPayz</td>
+                                    <td>E-wallet</td>
+                                    <td>Instant</td>
+                                    <td>$20 - $4000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>Flexpin</td>
+                                    <td>E-wallet</td>
+                                    <td>Instant</td>
+                                    <td>$10 - $150</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                </section>
+
+                <!-- Finish Providers block -->
+
+                <!-- Start Providers block -->
+
+                <section class="section__providers no-image">
+                    <h2 class="after-one">Withdrawal Options</h2>
+                    <p>We also have fast and secure withdrawal options players can use to cash out their winnings. These options have different timeframes and limits. We only accept withdrawals through credit cards, e-wallets and direct bank transfers.</p>
+                    <div class="section__providers-inner table back-image">
+                        <table class="table">
+                            <tbody>
+                                <tr class="table__title">
+                                    <td>Payment method</td>
+                                    <td>Type</td>
+                                    <td>Processing time</td>
+                                    <td>Limit per TX</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>Visa</td>
+                                    <td>Credit card</td>
+                                    <td>3 - 5 banking days</td>
+                                    <td>$20 - $1000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>Mastercard</td>
+                                    <td>Credit card</td>
+                                    <td>3 - 5 banking days</td>
+                                    <td>$20 - $1000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>Maestro</td>
+                                    <td>Credit card</td>
+                                    <td>3 - 5 banking days</td>
+                                    <td>$20 - $1000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>Skrill</td>
+                                    <td>E-wallet</td>
+                                    <td>Instant</td>
+                                    <td>$20 - $1000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>paysafecard</td>
+                                    <td>E-wallet</td>
+                                    <td>Instant</td>
+                                    <td>$20 - $250</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>Neteller</td>
+                                    <td>E-wallet</td>
+                                    <td>Instant</td>
+                                    <td>$20 - $1000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td">
+                                    <td>ecoPayz</td>
+                                    <td>E-wallet</td>
+                                    <td>Instant</td>
+                                    <td>$20 - $4000</td>
+                                </tr>
+                                <tr class="first-td second-td four-td font-size">
+                                    <td>Bank transfer</td>
+                                    <td>International bank</td>
+                                    <td>Instant</td>
+                                    <td>$200 - $4000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                </section>
+
+                <!-- Finish Providers block -->
+
+                <!-- Start FAQ block -->
+
+                <section class="section__fag section__fag-margin">
+                    <div class="fag fag__last">
+                        <div class="fag__left-block">
+                            <h2>FAQ</h2>
+                            <h3>How can I verify my account?</h3>
+                            <p>You must provide some documents to pass the account verification process at Kakadu Casino. Some of these documents are a photo of identification document, a statement of deposit, and proof of telephone number.</p>
+                            <h3>Is Kakadu Casino a legit site?</h3>
+                            <p>Yes, the casino is entirely legit, licensed and regulated by the Malta Gaming Authority.</p>
+                            <h3>Is Kakadu Casino a safe platform to play?</h3>
+                            <p>Kakadu Casino is a safe and secure venue to play. We use licensed gaming software, ensuring players a fair online gambling environment.</p>
+                            <h3>How do I withdraw my winnings at Kakadu Casino?</h3>
+                            <p>Go to our payment page and choose the most convenient payment option. Then, you can provide the required information and the amount you want to withdraw.</p>
+                        </div>
+                        <div class="fag__right-block fag__right-block-image">
+                            <img src="img/payments/backimg.png" alt="no-image">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Finish FAQ block -->
+
+            </div>
+        </main>
+
+        <!-- Finish Main -->
+
+        <!-- Start Footer -->
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__top-block">
+                    <a href="#" class="footer__logo"><img src="img/index/logo.png" alt="logo"></a>
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Slots</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Bonuses</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Finance</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Loyality Program</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Responsible Gambling</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <p class="footer__info">2022 © site Kakadu is licensed and regulated by the Malta Gaming Authority under the licences: MGA/B2C/394/2017 (issued on 01/08/2018). All rights reserved. Gambling can be addictive. Play responsibly. Only accepts customers over 18 years of age.</p>
+            </div>
+        </footer>
+        
+        <!-- Finish Footer -->
+
+    </div>  
+    
+        <!-- Start Script -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/burger.js"></script>
+        <script src="js/popups.js"></script>        
+        <script src="js/inputPassword.js"></script>
+        <script src="js/noCopyText.js"></script>
+        <!-- Finish Script -->
+</body>
+
+<!-- Finish Body -->
+</html>

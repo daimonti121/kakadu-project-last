@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#5900ff">
+    <title>Kakadu - Casino - Promotion</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!-- Start Body -->
+
+<body class="body">   
+    <div class="wrapper">
+
+        <!-- Start Header -->
+
+        <header class="header">
+            <div class="header__container">                
+                <div class="header__right-block">
+                    <a href="index.html" class="header__logo"><img src="img/index/logo.png" alt="logo"></a>
+                    <nav class="header__menu menu" oncontextmenu="return false;">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="promotion.html" class="menu__link">Promotion</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="games.html" class="menu__link">Games</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="payments.html" class="menu__link" oncontextmenu="return false;">Payments</a>
+                            </li>
+                            <li class="menu__item gold">
+                                <a href="vip-club.html" class="menu__link gold-color">VIP-Club</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__left-block">
+                    <button class="header__login-button open-popup" data-popup="popup1">Login</button>
+                    <button class="header__sign-button open-popup" data-popup="popup2">SIGN UP</button>
+                </div>
+
+                <!-- Start Mobile menu-burger -->
+
+                <div class="burger-menu">
+                    <a href="#" class="burger-menu_button">
+                        <span class="burger-menu_lines"></span>
+                    </a>
+                    <nav class="burger-menu_nav">
+                        <div class="burger-menu_flex_border">
+                        <a href="#section-1" class="burger-menu_link">Promotion</a>
+                        <a href="#section-2" class="burger-menu_link">Games</a>
+                        <a href="#section-3" class="burger-menu_link">Payments</a>
+                        <a href="#section-2" class="burger-menu_link">VIP-Club</a>
+                        </div>
+                    </nav>
+                    <div class="burger-menu_overlay"></div>
+                </div> 
+
+                <!-- Finish Mobile menu-burger -->
+
+            </div> 
+            <div class="header__title title">
+                <div class="title__container">
+                    <h1>Fly high with <br>
+                        kakadu casino!</h1>
+                    <p class="title__text">Welcome package:<br>
+                        $/€500 +150FS<br>
+                        for the initial 4 deposits</p>
+
+                    <!-- Start Modal windov Login-->
+
+                    <button class="title__button open-popup" data-popup="popup2">SIGN UP</button>
+                    <div id="popup1" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Login</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" placeholder="Email">                                
+                                    <label for="password">Password</label>                                       
+                                        <div class="password">
+                                            <input type="password" id="password-input-1" placeholder="Password" name="password">
+                                            <a href="#" class="password-control-1" onclick="return show_hide_password_one(this);"></a>
+                                        </div>
+
+                                    <input class="submit" type="submit" value="login">
+                                </form>
+                                <a class="content__link" href="#">Forgot your Password?</a>
+                                <p class="content__footer-link">Don’t have an account? <a href="#" class="open-popup" data-popup="popup2">Sign UP</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finish Modal windov -->
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <div id="popup2" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Step 1 of 2</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" pattern=".+@gmail.com" placeholder="Email" required>                                    
+                                    <label for="password">Password</label>
+                                    <div class="password">
+                                        <input type="password" id="password-input-2" placeholder="Password" name="password">
+                                        <a href="#" class="password-control-2" onclick="return show_hide_password_two(this);"></a>
+                                    </div>
+
+                                        <label for="email">Currency</label>
+                                        <div class="placeholder">
+                                            <select placeholder="EUR">
+                                                <option>EUR</option>
+                                                <option>Test</option>
+                                                <option>Test</option>
+                                            </select>
+                                            <button class="btn__placeholder">
+                                                <img src="img/index/arrowsvg.svg" alt="no-image">
+                                            </button>
+                                        </div>
+                                    <input type="submit" class="submit" value="Next"></input>
+                                </form>
+                                <p class="open-popup content__footer-link" data-popup="popup3">Already have an account? <a href="#">Login</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <!-- Start Modal windov Login-->
+
+                    <div id="popup3" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Login</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" placeholder="Email">                                
+                                    <label for="password">Password</label>                                       
+                                        <div class="password">
+                                            <input type="password" id="password-input-1" placeholder="Password" name="password">
+                                            <a href="#" class="password-control-1" onclick="return show_hide_password_one(this);"></a>
+                                        </div>
+
+                                    <input class="submit" type="submit" value="login">
+                                </form>
+                                <a class="content__link" href="#">Forgot your Password?</a>
+                                <p class="content__footer-link">Don’t have an account? <a href="#" class="open-popup" data-popup="popup4">Sign UP</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finish Modal windov -->
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <div id="popup4" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Step 1 of 2</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" pattern=".+@gmail.com" placeholder="Email" required>                                    
+                                    <label for="password">Password</label>
+                                    <div class="password">
+                                        <input type="password" id="password-input-2" placeholder="Password" name="password">
+                                        <a href="#" class="password-control-2" onclick="return show_hide_password_two(this);"></a>
+                                    </div>
+
+                                        <label for="email">Currency</label>
+                                        <div class="placeholder">
+                                            <select placeholder="EUR">
+                                                <option>EUR</option>
+                                                <option>Test</option>
+                                                <option>Test</option>
+                                            </select>
+                                            <button class="btn__placeholder">
+                                                <img src="img/index/arrowsvg.svg" alt="no-image">
+                                            </button>
+                                        </div>
+                                    <input type="submit" class="submit" value="Next"></input>
+                                </form>
+                                <p class="open-popup content__footer-link" data-popup="popup3">Already have an account? <a href="#">Login</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Start Modal windov Sing In-->
+
+                </div>
+            </div>
+        </header>
+        <!-- Finish Header -->
+
+        <!-- Start Main -->
+
+        <main class="main">
+            <div class="main__container">
+
+                <!-- Start Promotion block -->
+
+                <section class="section__promotion">
+                    <div class="promotion-inner promotion">
+                        <div class="promotion-info">
+                            <h2>Kakadu Casino Promotions - Free Spins and Bonus Codes</h2>
+                            <p>Kakadu Casino has amazing offers for new and regular players. As you would agree, offering players bonuses is one strategy to get them to keep playing. The good thing about Kakadu Casino bonuses is that they are huge and have lower wagering requirements. Also, we don’t just promise these bonuses for publicity; we deliver on our promises to our players. </p>
+                            <p>As a new player, you can claim up to four deposit bonuses after registration. Huge, right? Regular players can also claim superb bonuses like reload offers, no deposit bonuses and free spins. We’ll be exploring more about these promotions in this article. So, keep reading to learn more!</p>
+                        </div>
+                        <div class="promotion-image">
+                            <img src="img/promotion/150FS.png" alt="150FS">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Finish Promotion block -->
+
+                <!-- Start Bonus block -->
+
+                <section class="section__bonus">
+                    <div class="section__bonus-inner bonus">
+                        <div class="bonus__items">
+                            <div class="bonus__item">
+                                <div class="bonus__img"><img src="img/promotion/Icon-1.svg" alt="no-image"></div>
+                                <div class="bonus__text">
+                                    <h3>One week</h3>
+                                    <p>validity period</p>
+                                </div>
+                            </div>
+    
+                            <div class="bonus__item">
+                                <div class="bonus__img"><img src="img/promotion/Icon-2.svg" alt="no-image"></div>
+                                <div class="bonus__text">
+                                    <h3>40x</h3>
+                                    <p>Wagering requirement</p>
+                                </div>
+                            </div>
+    
+                            <div class="bonus__item">
+                                <div class="bonus__img"><img src="img/promotion/Icon-3.svg" alt="no-image"></div>
+                                <div class="bonus__text">
+                                    <h3>12</h3>
+                                    <p>VIP levels</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bonus__info">
+                            <h2>About Kakadu Bonus Offers</h2>
+                            <p>Our huge bonuses can help new players get off to a good start. Also, regular players can use our bonuses to keep pushing for the big wins they’ve always dreamt about. However, they need to check through the terms and conditions before claiming them. You risk losing your bonus if you don’t check these bonus requirements.</p>
+                            <p>The first bonus requirement is the validity period. Remember that you only have one week to activate and wager the bonus. Another bonus requirement is the wagering requirement, which is 40x.</p>
+                            <p>We also have a special system that offers bonuses to players who love schemes like battle passes in video games. The system offers different perks to players who complete different loyalty levels (we have 12 VIP levels). These perks may include free spins and additional funds to your account.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Finish Bonus block -->
+
+                <!-- Start Deposit block -->
+
+                <section class="section__deposit info">
+                    <h2>Deposit Bonuses</h2>
+                    <p>We give out a 100% deposit to new players on their first deposit and up to 100 free spins. Also, we give a 50% second deposit bonus. However, it doesn’t stop there. We give them a 75% third deposit bonus as well. Then we cap it with a 50% fourth deposit bonus and 50 free spins.</p>
+                    <div class="info-inner info__list">
+                        <div class="info__item">
+                            <div class="info__title">
+                                <div class="number">01</div>
+                                <div class="text">Reload Bonus on Tuesday</div>
+                            </div>
+                            <p>We also have a reload bonus on Tuesdays for players that have claimed all the welcome bonuses. </p>
+                            <p>It gives them a 30% up to $150 reload bonus on their deposits at Kakadu Casino.</p>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__title">
+                                <div class="number">02</div>
+                                <div class="text">High-Roller Bonus</div>
+                            </div>
+                            <p>Players who love to stake high can also claim huge bonuses at Kadaku Casino. The minimum qualifying deposit to claim the offer is $500. </p>
+                            <p>Here are the perks of claiming the high-roller bonus:</p>
+                            <ul>
+                                <li>50% bonus on every third deposit (unlimited)</li>
+                                <li>75% bonus on your third deposit (1 per day)</li>
+                                <li>Calendar bonus</li>
+                                <li>Saturday Chill</li>
+                                <li>Thursday Cashback</li>
+                                <li>Spin Carousel</li>
+                            </ul>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__title">
+                                <div class="number">03</div>
+                                <div class="text">Sunday <br>Spins</div>
+                            </div>
+                            <p>We also help you end your week on an exciting note with our Sunday Spins promotion. The bonus offers up to 100 free spins, which you can use to spin certain slot games for free. You get the chance to win more money if you can find your way around these games.</p>
+                            <p>However, you must have deposited a certain amount throughout the week to claim the bonus. Here’s the breakdown of the numbers:</p>
+                            <ul>
+                                <li>You get 25 free spins for depositing $20</li>
+                                <li>You get 50 free spins for depositing $50</li>
+                                <li>You get 100 free spins for depositing $100</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Finish Deposit block -->
+
+                <!-- Start Bonuses block -->
+                
+                <section class="section__bonuses">
+                    <h2>Kakadu No Deposit Bonuses</h2>
+                    <p>You can claim Kakadu no deposit bonuses in two ways, including</p>
+                    <div class="info">
+                        <div class="info__left">
+                            <h3>Free Spins for Loyalty</h3>
+                            <p>The maximum win for the loyalty free spins is capped at $50. You can check the terms and conditions page for more information.</p>                            
+                        </div>
+                        <div class="info__right">
+                            <h3>Bonus for Verification</h3>
+                            <p>The maximum win for the verification free spins bonus is $150. Remember that the bonus is credited once your phone number has been verified. Also, the wagering requirement for the bonus is 40x, valid for seven days.</p>
+                        </div>
+                    </div> 
+                </section>
+
+                <!-- Finish Bonuses block -->
+
+                <!-- Start Promo block -->
+
+                <section class="section__promo">
+                    <div class="info-inner info">
+                        <div class="info__block-left">
+                            <h2>Free Spins</h2>
+                            <p>You can request to divide your free spins bonuses into equal parts through our live chat support. The eligible games you can use the free spins bonuses to play are BGaming slots. For example, you can divide 200 free spins as follows:</p>
+                            <ul>
+                                <li>50 spins for Elvis Frog in Vegas</li>
+                                <li>50 spins for Book of Pyramids</li>
+                                <li>50 spins for Aztec Magic Deluxe</li>
+                                <li>50 spins for Desert Treasure</li>
+                                <li>Please note that the maximum win is capped at $150.</li>
+                            </ul>
+                        </div>
+                        <div class="info__block-right">
+                            <h2>New Promo Codes</h2>
+                            <p>We also give out coupon codes to our new players after registration and verification of their emails and phone numbers. They can get them via email or SMS on their phones. The bonus value is 50 free spins.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Finish Promo block -->
+
+                <!-- Start Cashback block -->
+                
+                <section class="section__cashback">
+                    <div class="section__cashback-inner info">
+                        <h2>Cashback</h2>
+                        <p>The cashback offer is another generous bonus you can claim at Kakadu Casino. We give 5-10% cashback to members who have reached the Silver Back, Diamond Claw or Golden Feather VIP levels.</p>
+                        <p>Additionally, you can get a 5% cashback for your losses on slot games with a wagering requirement of 40x. However, you should have made total deposits of $300-$499 the previous week to claim the bonus.</p>
+                        <p>We also give out a 10% cashback for your losses on slot games with a wagering requirement of 40x. However, you should have made a total deposit of $500 or its equivalent the previous week to claim the bonus.</p>
+                    </div>
+                </section>
+
+                <!-- Finish Cashback block -->
+
+                <!-- Start FAQ block -->
+
+                <section class="section__fag">
+                    <div class="fag">
+                        <div class="fag__left-block">
+                            <h2>FAQ</h2>
+                            <h3>How can I verify my account?</h3>
+                            <p>You must provide some documents to pass the account verification process at Kakadu Casino. Some of these documents are a photo of identification document, a statement of deposit, and proof of telephone number.</p>
+                            <h3>Is Kakadu Casino a legit site?</h3>
+                            <p>Yes, the casino is entirely legit, licensed and regulated by the Malta Gaming Authority.</p>
+                            <h3>Is Kakadu Casino a safe platform to play?</h3>
+                            <p>Kakadu Casino is a safe and secure venue to play. We use licensed gaming software, ensuring players a fair online gambling environment.</p>
+                            <h3>How do I withdraw my winnings at Kakadu Casino?</h3>
+                            <p>Go to our payment page and choose the most convenient payment option. Then, you can provide the required information and the amount you want to withdraw.</p>
+                        </div>
+                        <div class="fag__right-block">
+                            <h2>General Bonus Terms</h2>
+                            <p>One important rule of playing at Kadaku Casino is that family members are not allowed to create multiple accounts. We only allow one family to create an account that all other members can use to play. Also, you can only use one device to access the platform. You risk losing your account with all the money in it if you violate this security rule.</p>
+                            <p>Moreover, you cannot request the withdrawal of your bonus funds if you have not complied with the wagering conditions. Members are also free to play without any bonuses as they wish.</p>
+                            <p>You must consistently fund your casino account before playing any of our games. The minimum balance you should have before playing is $0.05. Any player with less than $0.05 cannot play at Kakadu Casino.</p>                    
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Finish FAQ block -->
+                
+
+            </div>
+        </main>
+
+        <!-- Finish Main -->
+
+        <!-- Start Footer -->
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__top-block">
+                    <a href="#" class="footer__logo"><img src="img/index/logo.png" alt="logo"></a>
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Slots</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Bonuses</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Finance</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Loyality Program</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Responsible Gambling</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <p class="footer__info">2022 © site Kakadu is licensed and regulated by the Malta Gaming Authority under the licences: MGA/B2C/394/2017 (issued on 01/08/2018). All rights reserved. Gambling can be addictive. Play responsibly. Only accepts customers over 18 years of age.</p>
+            </div>
+        </footer>
+        
+        <!-- Finish Footer -->
+
+
+    </div>  
+    
+        <!-- Start Script -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/burger.js"></script>
+        <script src="js/popups.js"></script>        
+        <script src="js/inputPassword.js"></script>
+        <script src="js/noCopyText.js"></script>
+        <!-- Finish Script -->
+</body>
+
+<!-- Finish Body -->
+</html>

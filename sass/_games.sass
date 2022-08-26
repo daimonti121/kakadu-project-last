@@ -1,0 +1,227 @@
+@import "media"
+@import "fonts"
+@import "burger"
+@import "vars"
+@import "popups"
+
+.section__slots 
+    margin-top: 80px
+    position: relative
+    +_1400
+        margin: 80px 20px 80px
+    +_600
+        margin: 40px 20px 0px       
+    
+    .info 
+        &::before
+            content: url('../img/games/back-img-1.png')
+            display: block
+            position: absolute
+            left: 1150px
+            top: -50px
+            z-index: -1
+            +_979
+                display: none
+        &__title 
+            h2
+                +H2
+                color: $goldColor
+                border-text: 1px solid $goldColor
+                text-shadow: 0px 1.60153px 0px #7A4558
+                +_600
+                    text-align: center
+                    font-size: 36px       
+        &__list 
+            display: flex
+            justify-content: space-between
+            +_979
+                flex-direction: column
+        &__item 
+            max-width: 412px
+            margin-left: 20px
+            +_979
+                max-width: 100%
+                margin-left: 0
+            &:first-child
+                margin-left: 0
+            p
+                +P
+                color: $textColor
+                margin-top: 30px
+
+.section__registration
+    margin: 80px 0px 80px
+    +_1400
+        margin: 80px 20px 0px
+        +_600
+        margin: 40px 20px 0px    
+    .registration__top 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        +_979
+            flex-direction: column-reverse
+        &-right
+            width: auto
+            height: auto
+            display: block
+            +_1400
+                margin-right: 20px
+            +_979
+                width: 100%
+                margin: 40px auto 0px
+            img
+                display: block
+                margin: 0 auto
+                +_979
+                    max-width: 450px
+                    width: 100%
+        &-left             
+            max-width: 740px
+            +_979
+                max-width: 100%
+            h2
+                +H2
+                color: #F8CA00
+                text-shadow: 0px 1.60153px 0px #7A4558
+                
+                +_600
+                    text-align: center
+                    font-size: 36px
+            p
+                margin-top: 30px
+                +P
+                color: $textColor
+            span 
+                color: $goldColor
+                
+
+.no-image
+    &::before
+        display: none
+
+.section__deposit 
+    .info__list-height
+        display: flex 
+        flex-wrap: wrap
+
+    .info__list-height > .info__item 
+        height: auto
+        align-items: center
+
+    .info__item-width
+        margin-top: 20px
+        max-width: 630px
+        +_979
+            max-width: 100%
+    .info__align-item
+        align-items: center
+
+.section__providers 
+    margin: 80px 0px 0px
+    position: relative
+    +_1400
+        margin: 80px 20px 0px
+        +_600
+        margin: 40px 20px 0px  
+    &::before
+            content: url('../img/games/back-img-2.png')
+            display: block
+            position: absolute
+            left: 1058px 
+            top: -173px 
+            z-index: -1
+            +_979
+                display: none
+    h2 
+        +H2
+        color: #F8CA00
+        text-shadow: 0px 1.60153px 0px #7A4558
+        
+        +_600
+            text-align: center
+            font-size: 36px
+    p
+        margin-top: 30px
+        +P
+        color: $textColor
+        max-width: 740px
+.section__providers-inner 
+    .table 
+        margin-top: 10px
+        width: 100%
+        border-spacing: 10px 20px
+        td
+            width: 305px 
+            height: 73px
+            text-align: center  
+            +_1170
+                max-width: 305px
+            +_600
+                max-width: 90px
+        tr
+            border-bottom: 2px solid rgba(15, 91, 205, 0.5)
+            display: block
+            margin: 0 auto
+            &:first-child
+                border: none
+            &:last-child
+                border: none
+        &__title 
+            td
+                background: $mainLight
+                border-radius: 20px
+                color: $textColor
+                +pL 
+                +_600
+                    font-size: 14px
+
+        &__first-second 
+            td
+                &:nth-child(1)                    
+                    background: linear-gradient(90deg, #F8CA00 0%, #F8A400 100%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    +H3
+                    +_600
+                        font-size: 20px
+                &:nth-child(2)                    
+                    background: linear-gradient(90deg, #F8CA00 0%, #F8A400 100%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    +H2         
+                    +_600
+                        font-size: 20px        
+        &__others 
+            td
+                &:nth-child(3)  
+                    +P 
+                    text-align: left
+                    color: $textColor
+                    +_600
+                        font-size: 16px
+                &:nth-child(4)                    
+                    +P 
+                    text-align: left
+                    color: $textColor
+                    +_600
+                        font-size: 16px
+
+.section__coins-info__margin
+    margin: 30px 20px 80px
+    position: relative
+    +_600
+        margin: 30px 20px 40px
+    &::before
+        content: url('../img/games/back-img-3.png')
+        display: block
+        position: absolute
+        right: 1161px
+        top: -213px
+        z-index: -1
+        +_979
+            display: none
+    .coins-info__list-left
+        margin-right: 20px
+        +_979
+            margin-right: 0

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#5900ff">
+    <title>Kakadu - Casino - VIP-Club</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!-- Start Body -->
+
+<body class="body">   
+    <div class="wrapper">
+
+        <!-- Start Header -->
+
+        <header class="header">
+            <div class="header__container">                
+                <div class="header__right-block">
+                    <a href="index.html" class="header__logo"><img src="img/index/logo.png" alt="logo"></a>
+                    <nav class="header__menu menu" oncontextmenu="return false;">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="promotion.html" class="menu__link">Promotion</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="games.html" class="menu__link">Games</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="payments.html" class="menu__link" oncontextmenu="return false;">Payments</a>
+                            </li>
+                            <li class="menu__item gold">
+                                <a href="vip-club.html" class="menu__link gold-color">VIP-Club</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__left-block">
+                    <button class="header__login-button open-popup" data-popup="popup1">Login</button>
+                    <button class="header__sign-button open-popup" data-popup="popup2">SIGN UP</button>
+                </div>
+
+                <!-- Start Mobile menu-burger -->
+
+                <div class="burger-menu">
+                    <a href="#" class="burger-menu_button">
+                        <span class="burger-menu_lines"></span>
+                    </a>
+                    <nav class="burger-menu_nav">
+                        <div class="burger-menu_flex_border">
+                        <a href="#section-1" class="burger-menu_link">Promotion</a>
+                        <a href="#section-2" class="burger-menu_link">Games</a>
+                        <a href="#section-3" class="burger-menu_link">Payments</a>
+                        <a href="#section-2" class="burger-menu_link">VIP-Club</a>
+                        </div>
+                    </nav>
+                    <div class="burger-menu_overlay"></div>
+                </div> 
+
+                <!-- Finish Mobile menu-burger -->
+
+            </div> 
+            <div class="header__title title">
+                <div class="title__container">
+                    <h1>Fly high with <br>
+                        kakadu casino!</h1>
+                    <p class="title__text">Welcome package:<br>
+                        $/€500 +150FS<br>
+                        for the initial 4 deposits</p>
+
+                    <!-- Start Modal windov Login-->
+
+                    <button class="title__button open-popup" data-popup="popup2">SIGN UP</button>
+                    <div id="popup1" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Login</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" placeholder="Email">                                
+                                    <label for="password">Password</label>                                       
+                                        <div class="password">
+                                            <input type="password" id="password-input-1" placeholder="Password" name="password">
+                                            <a href="#" class="password-control-1" onclick="return show_hide_password_one(this);"></a>
+                                        </div>
+
+                                    <input class="submit" type="submit" value="login">
+                                </form>
+                                <a class="content__link" href="#">Forgot your Password?</a>
+                                <p class="content__footer-link">Don’t have an account? <a href="#" class="open-popup" data-popup="popup2">Sign UP</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finish Modal windov -->
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <div id="popup2" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Step 1 of 2</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" pattern=".+@gmail.com" placeholder="Email" required>                                    
+                                    <label for="password">Password</label>
+                                    <div class="password">
+                                        <input type="password" id="password-input-2" placeholder="Password" name="password">
+                                        <a href="#" class="password-control-2" onclick="return show_hide_password_two(this);"></a>
+                                    </div>
+
+                                        <label for="email">Currency</label>
+                                        <div class="placeholder">
+                                            <select placeholder="EUR">
+                                                <option>EUR</option>
+                                                <option>Test</option>
+                                                <option>Test</option>
+                                            </select>
+                                            <button class="btn__placeholder">
+                                                <img src="img/index/arrowsvg.svg" alt="no-image">
+                                            </button>
+                                        </div>
+                                    <input type="submit" class="submit" value="Next"></input>
+                                </form>
+                                <p class="open-popup content__footer-link" data-popup="popup3">Already have an account? <a href="#">Login</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <!-- Start Modal windov Login-->
+
+                    <div id="popup3" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Login</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" placeholder="Email">                                
+                                    <label for="password">Password</label>                                       
+                                        <div class="password">
+                                            <input type="password" id="password-input-1" placeholder="Password" name="password">
+                                            <a href="#" class="password-control-1" onclick="return show_hide_password_one(this);"></a>
+                                        </div>
+
+                                    <input class="submit" type="submit" value="login">
+                                </form>
+                                <a class="content__link" href="#">Forgot your Password?</a>
+                                <p class="content__footer-link">Don’t have an account? <a href="#" class="open-popup" data-popup="popup4">Sign UP</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finish Modal windov -->
+
+                    <!-- Start Modal windov Sing In-->
+
+                    <div id="popup4" class="popup">
+                        <div class="popup__content content">
+                            <div class="content__left-block">
+                                <h2>Step 1 of 2</h2>
+                                <form action="">
+                                    <label for="email">Email</label>
+                                        <input type="email" id="email" pattern=".+@gmail.com" placeholder="Email" required>                                    
+                                    <label for="password">Password</label>
+                                    <div class="password">
+                                        <input type="password" id="password-input-2" placeholder="Password" name="password">
+                                        <a href="#" class="password-control-2" onclick="return show_hide_password_two(this);"></a>
+                                    </div>
+
+                                        <label for="email">Currency</label>
+                                        <div class="placeholder">
+                                            <select placeholder="EUR">
+                                                <option>EUR</option>
+                                                <option>Test</option>
+                                                <option>Test</option>
+                                            </select>
+                                            <button class="btn__placeholder">
+                                                <img src="img/index/arrowsvg.svg" alt="no-image">
+                                            </button>
+                                        </div>
+                                    <input type="submit" class="submit" value="Next"></input>
+                                </form>
+                                <p class="open-popup content__footer-link" data-popup="popup3">Already have an account? <a href="#">Login</a></p>
+                            </div>
+                            <div class="content__right-block">
+                                <div class="title">
+                                    <h3>Welcome package</h3>
+                                    <p>+150 free spins and bonuses up to $/€500!</p>
+                                </div>
+                                <ol class="body">
+                                    <li>
+                                        <span>First deposit bonus</span>
+                                        <p>100% up to €200 + 100FS</p>
+                                    </li>
+                                    <li>
+                                        <span>Second deposit bonus</span>
+                                        <p>50% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Third deposit bonus</span>
+                                        <p>75% up to €100</p>
+                                    </li>
+                                    <li>
+                                        <span>Fourth deposit bonus</span>
+                                        <p>50% up to €100 + 50FS</p>
+                                    </li>
+                                </ol>
+                                <div class="footer">
+                                    <a href="#">Sign up and get bonuses!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Start Modal windov Sing In-->
+
+                </div>
+            </div>
+        </header>
+        <!-- Finish Header -->
+
+        <!-- Start Main -->
+
+        <main class="main">
+            <div class="main__container">
+
+                <!-- Start Program block -->
+
+                <section class="section__program">
+                    <div class="section__program-inner program">
+                        <div class="program__info">
+                            <h3>Kakadu Casino Loyalty Program</h2>
+                            <p>Kakadu Casino has a VIP club that rewards loyal and regular members. This VIP program offers players several perks, including free spins, cash prizes, cashback offers, and other exclusive bonuses.</p>
+                            <h2>Kakadu Casino VIP Club</h2>
+                            <p>We have 12 loyalty levels you can join. All these levels have different bonus conditions and requirements you must fulfil before joining. Also, you need to get the required Mango points to climb up the VIP ladder. The higher you climb, the more Mango Points you need and the more perks you get. </p>
+                            <h2>Features and Advantages of the VIP Program</h2>
+                            <p>We offer our players awesome perks in our VIP program whenever they reach a higher level. These perks include:</p>
+                            <ul>
+                                <li>Free spins that can be used to play BGaming slots</li>
+                                <li>An additional 20x your bet</li>
+                                <li>Cashbacks of between 5% and 10%</li>
+                                <li>A personalised account manager</li>
+                                <li>Increased withdrawal limits</li>
+                                <li>Several other incentives for slot games and tournaments</li>
+                            </ul>
+                            <p>Remember that the more you play at Kakadu Casino, the more rewards you get. We use our VIP program to encourage our loyal players to keep depositing and playing their favourite games. So, why not join Kakadu Casino today to enjoy these generous rewards!</p>
+                        </div>
+                        <div class="program__list">
+                            <div class="program__item">
+                                <div class="program__number number-color">12</div>
+                                <div class="program__style font-color">Golden Feather</div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__number">11</div>
+                                <div class="program__style">Diamond Claw</div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__number">10</div>
+                                <div class="program__style">Silver Back</div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__number">09</div>
+                                <div class="program__style">Gemstone Necklace</div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__number">08</div>
+                                <div class="program__style">Rainbow Tail</div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__number">07</div>
+                                <div class="program__style">Coral Hill</div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__number">06</div>
+                                <div class="program__style">Sapphire Chest</div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__number">05</div>
+                                <div class="program__style">Topaz Pendant</div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__number">04</div>
+                                <div class="program__style">Ruby Ring</div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__number">03</div>
+                                <div class="program__style">Amber Eye</div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__number">02</div>
+                                <div class="program__style">Emerald Crest</div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__number">01</div>
+                                <div class="program__style">Shiny Kakadu</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Finish Program block -->
+
+            </div>
+        </main>
+
+        <!-- Finish Main -->
+
+        <!-- Start Footer -->
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__top-block">
+                    <a href="#" class="footer__logo"><img src="img/index/logo.png" alt="logo"></a>
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Slots</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Bonuses</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Finance</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Loyality Program</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Responsible Gambling</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <p class="footer__info">2022 © site Kakadu is licensed and regulated by the Malta Gaming Authority under the licences: MGA/B2C/394/2017 (issued on 01/08/2018). All rights reserved. Gambling can be addictive. Play responsibly. Only accepts customers over 18 years of age.</p>
+            </div>
+        </footer>
+        
+        <!-- Finish Footer -->
+
+    </div>  
+    
+        <!-- Start Script -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/burger.js"></script>
+        <script src="js/popups.js"></script>        
+        <script src="js/inputPassword.js"></script>
+        <script src="js/noCopyText.js"></script>
+        <!-- Finish Script -->
+</body>
+
+<!-- Finish Body -->
+</html>
